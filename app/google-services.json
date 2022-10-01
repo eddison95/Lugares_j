@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "88279758996",
+    "project_id": "lugares-4fb36",
+    "storage_bucket": "lugares-4fb36.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88279758996:android:c18f070a881953cd17dc81",
+        "android_client_info": {
+          "package_name": "com.lugares"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "88279758996-gjrg28gdkjoogf2noe4rb7u53ulmc2jk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXltxj_JXyWxnHmewPijxAxCM6e4rRc50"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "88279758996-gjrg28gdkjoogf2noe4rb7u53ulmc2jk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88279758996:android:2c40b2abc0d1d26017dc81",
+        "android_client_info": {
+          "package_name": "com.lugares_j"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "88279758996-gjrg28gdkjoogf2noe4rb7u53ulmc2jk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXltxj_JXyWxnHmewPijxAxCM6e4rRc50"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "88279758996-gjrg28gdkjoogf2noe4rb7u53ulmc2jk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
