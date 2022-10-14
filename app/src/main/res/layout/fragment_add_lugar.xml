@@ -24,7 +24,7 @@
         android:inputType="textEmailAddress" />
 
     <EditText
-        android:id="@+id/editTextPhone"
+        android:id="@+id/etTelefono"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"

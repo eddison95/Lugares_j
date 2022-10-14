@@ -1,6 +1,7 @@
 package com.lugares_j.model
 
 import android.os.Parcelable
+import android.widget.EditText
 import androidx.room.*
 import kotlinx.parcelize.Parcelize
 
