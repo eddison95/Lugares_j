@@ -56,15 +56,18 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment-ktx:2.5.2'
     implementation 'androidx.navigation:navigation-ui-ktx:2.5.2'
     implementation 'com.google.firebase:firebase-auth:21.1.0'
+    //implementation 'com.google.firebase:firebase-firestore-ktx:24.4.0'
+    implementation 'com.google.firebase:firebase-firestore-ktx'
+    implementation 'com.google.firebase:firebase-storage-ktx'
+    implementation 'com.google.android.gms:play-services-location:19.0.1'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     //Se agregan estas librerias para utilizar anotaciones en @Entity y demas
-    annotationProcessor 'androidx.room:room-compiler:2.4.3'
-    kapt "androidx.room:room-compiler:2.4.3"
-    implementation 'androidx.room:room-ktx:2.4.3'
-
+   // annotationProcessor 'androidx.room:room-compiler:2.4.3'
+    //kapt "androidx.room:room-compiler:2.4.3"
+    //implementation 'androidx.room:room-ktx:2.4.3'
     // Para utilizar con navegacion de fragmentos
     implementation 'androidx.navigation:navigation-dynamic-features-fragment:2.5.2'
 

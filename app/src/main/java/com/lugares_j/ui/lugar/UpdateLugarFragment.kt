@@ -1,7 +1,9 @@
 package com.lugares_j.ui.lugar
 
+import android.Manifest
 import android.app.AlertDialog
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -62,7 +64,18 @@ class UpdateLugarFragment : Fragment() {
     }
 
     private fun verEnMapa() {
-        TODO("Not yet implemented")
+        val latitud = binding.tvLatitud.text.toString().toDouble()
+        val longitud = binding.tvLongitud.text.toString().toDouble()
+
+        if (latitud.isFinite() && longitud.isFinite()) { // verifica si se tienen valores reales en las coordenadas
+
+            val uri = "geo:$latitud,$longitud?z18"
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(uri))
+            startActivity(intent)
+        }else{ // Si no hay informacion no se puede realizae la accion
+            Toast.makeText(requireContext(),
+                getString(R.string.msg_data),Toast.LENGTH_LONG).show()
+        }
     }
 
     private fun verWeb() {
@@ -82,7 +95,7 @@ class UpdateLugarFragment : Fragment() {
         val valor = binding.etTelefono.text.toString()
         if (valor.isNotEmpty()) { // si el telefono no es vacio, entonces se intenta enviar mensaje por whatsapp
             val intent = Intent(Intent.ACTION_VIEW)
-            val uri = "whatsapp://send?phone=506$valor&text="
+            val uri = "whatsapp://send?phone=506$valor&text="+
                 getString(R.string.msg_saludos)
             intent.setPackage("com.whatsapp")
             intent.data = Uri.parse(uri)
@@ -96,7 +109,29 @@ class UpdateLugarFragment : Fragment() {
     }
 
     private fun llamarLugar() {
-        TODO("Not yet implemented")
+        val valor = binding.etTelefono.text.toString()
+        if (valor.isNotEmpty()) { // si el numero no esta vacio se intenta envia el mensaje
+            //llamar los recursos que tiene el celular -- mapas, correos, mensajes, llamadas etc
+
+            val intent = Intent(Intent.ACTION_CALL)
+            intent.data = Uri.parse("tel:$valor")
+
+            if (requireActivity()
+                    .checkSelfPermission(android.Manifest.permission.CALL_PHONE) !=
+                PackageManager.PERMISSION_GRANTED
+            ) {
+                //SI ESTAMOS ACA HAY QUE PEDIR UBICACION
+                requireActivity()
+                    .requestPermissions(
+                        arrayOf(
+                            android.Manifest.permission.CALL_PHONE), 105)
+            }else{
+                // si se tiene el permiso de hacer la llamada
+                requireActivity().startActivity(intent)
+            }
+        } else { // si no hay informacion no se realiza la accion
+            Toast.makeText(requireContext(), getString(R.string.msg_data), Toast.LENGTH_LONG).show()
+        }
     }
 
     private fun escribirCorreo() {
