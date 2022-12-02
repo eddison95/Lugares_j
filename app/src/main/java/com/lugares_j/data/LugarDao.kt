@@ -84,7 +84,7 @@ class  LugarDao  {
 
     fun getLugares() : MutableLiveData<List<Lugar>> {
 
-        val listaLugares = MutableLiveData<List<Lugar>>()
+        val listaLugares = MutableLiveData<List<Lugar>>()  //
 
         firestore
             .collection(coleccion1)
