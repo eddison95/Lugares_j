@@ -1,7 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Lugares_j</string>
-    <string name="tv_correo">Correo</string>
-    <string name="tv_clave">Clave</string>
+    <string name="tv_correo">Email</string>
+    <string name="tv_clave">Password</string>
     <string name="title_activity_principal">Principal</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -10,24 +11,24 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_lugar">Lugares</string>
+    <string name="menu_lugar">Places</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
 
 
     <string name="msg_nombre">Nombre del lugar</string>
     <string name="msg_correo">Email (lugar@xxxx.xxxx)</string>
-    <string name="msg_telefono">Telefono (9999-9999)</string>
+    <string name="msg_telefono">Phone (9999-9999)</string>
     <string name="msg_web">Sitio Web </string>
     <string name="bt_add_lugar">Agregar</string>
-    <string name="msg_lugar_added">Lugar agregado</string>
-    <string name="msg_data">Faltan datos</string>
-    <string name="bt_update_lugar">Actualizar Lugar</string>
-    <string name="msg_lugar_updated">Lugar actualizado</string>
-    <string name="bt_delete_lugar">Eliminar Lugar</string>
-    <string name="msg_lugar_deleted">Lugar eliminado</string>
+    <string name="msg_lugar_added">Place agregado</string>
+    <string name="msg_data">Missing data</string>
+    <string name="bt_update_lugar">Update Lugar</string>
+    <string name="msg_lugar_updated">Place Updated</string>
+    <string name="bt_delete_lugar">Delete Lugar</string>
+    <string name="msg_lugar_deleted">Place Deleted</string>
     <string name="msg_pregunta_delete">Esta seguro de eliminar el lugar</string>
-    <string name="msg_si">Si</string>
+    <string name="msg_si">Yes</string>
     <string name="msg_no">No</string> <string name="msg_enviar_correo">Enviar correo electrónico</string>
 
     <string name="msg_phone_call">Realizar llamada telefónica</string>
@@ -57,8 +58,4 @@
     <string name="msg_subiendo_imagen">Subiendo imagen</string>
     <string name="todo">prueba</string>
     <string name="msg_subiendo_lugar">subiendo el lugar</string>
-    <string name="default_web_client_idr" translatable="false">41931746829-dfl8ejnarn7kolsb7385gr73ocd6pjji.apps.googleusercontent.com</string>
-
-
-
 </resources>
